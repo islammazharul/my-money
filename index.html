@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="valentine">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <!-- Tailwind CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-5 font-semibold">Money Master</h1>
+    </header>
+    <main>
+        <section>
+            <div class="bg-slate-100 text-center w-1/2 mx-auto mt-6 p-12 font-semibold">
+                <h2 class="text-4xl mb-6">Income</h2>
+                <h3 class="text-3xl mb-6">Income : <span><input id="income-total" type="text" name="" id=""></span></h3>
+                <h2 class="text-4xl mb-6">Expenses</h2>
+                <h3 class="text-3xl mb-4">Food : <span><input id="food-expense" type="text" name="" id=""></span></h3>
+                <h3 class="text-3xl mb-4">Rent : <span><input id="rent-expense" type="text" name="" id=""></span></h3>
+                <h3 class="text-3xl mb-4">Clothes : <span><input id="clothe-expense" type="text" name="" id=""></span></h3>
+                <button id="btn-calculate" class="bg-blue-500 text-2xl text-white px-8 py-2 rounded-lg mb-6">Calculate</button>
+                <h2 class="text-4xl mb-6">Total Expenses : <span id="total-expense"></span></h2>
+                <h2 class="text-4xl mb-6">Balance : <span id="balance-total"></span></h2>
+                <h3 class="text-3xl mb-4">Save : <span><input id="saving-percent" type="text" name="" id=""></span> % <span><button id="btn-save" class="bg-blue-500 text-2xl text-white px-8 py-2 rounded-lg">Save</button></span></h3>
+                <h2 class="text-4xl mb-6">Saving Amount : <span id="save-amount"></span></h2>
+                <h2 class="text-4xl">Remaining Balance : <span id="remain-balance"></span></h2>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/save.js"></script>
+</body>
+</html>
